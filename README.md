@@ -179,6 +179,8 @@ document.addEventListener('DOMContentLoaded', () => {
 ```
 In this example, a ball bounces around the screen, and a welcome message is displayed. You can use this as a starting point to experiment and build your own game mechanics.
 
+Here is the live demo of the guide: https://dmitrii-eremin.github.io/passion-ts-example
+
 ---
 
 And that's it! You now have a working game project using the Passion engine. From here, you can start adding your own features, graphics, and gameplay. Have fun creating your games, and don't hesitate to explore the Passion engine documentation for more advanced features!
