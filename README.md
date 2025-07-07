@@ -129,8 +129,36 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 });
 ```
-This code waits for the DOM to load, finds the canvas element, and creates a new Passion engine instance. The `run` method starts the game loop, calling your update and render functions every frame.
+This code waits for the DOM to load, finds the canvas element, and creates a new Passion engine instance. 
 
+Now make sure, that your `package.json` looks like this:
+```json
+{
+  "name": "passion-ts-example",
+  "version": "1.0.0",
+  "description": "An example of passion game engine usage",
+  "license": "ISC",
+  "author": "Dmitrii Eremin <erem.dmitrii@gmail.com>",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "@dmitrii-eremin/passion-engine": "^1.0.116"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.10",
+    "typescript": "^5.8.3",
+    "vite": "^7.0.2"
+  }
+}
+```
+
+After that, the `npm run dev` starts the dev server, so you can go in browser to the address you can see in the terminal.
 Congratulations! You now have a minimal setup for a Passion engine game.
 
 ## Making the Game Interactive
